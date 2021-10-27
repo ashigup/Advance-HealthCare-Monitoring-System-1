@@ -15,7 +15,7 @@ facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 list_for_emotional_weight=[]
 a = time.monotonic()
 
-###################################################################################
+##################################################################
 # Sending SMS 
 # SMS will be sent using twilio 
 # Currently I am using my free twilio account for demo
@@ -46,7 +46,7 @@ def send_alert():
             print(f"Message failed with error: {responseData['messages'][0]['error-text']}")
 
 
-###################################################################################
+#################################################################
 
 
 class VideoCamera(object):
@@ -135,3 +135,4 @@ class VideoCamera(object):
 
         # Returning the image as a bytes object
         return jpeg.tobytes()
+    ###################################################################
